@@ -6,6 +6,9 @@ gem 'faker'
 gem 'fog'
 gem 'carrierwave'
 gem 'mini_magick'
+gem  'devise'
+gem 'paperclip'
+gem 'masonry-rails'
 
 
 gem 'will_paginate'
