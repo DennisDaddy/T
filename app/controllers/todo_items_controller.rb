@@ -10,7 +10,9 @@ class TodoItemsController < ApplicationController
 
 	def destroy
 		@todo_item = @todo_list.todo_items.find(params[:id])
-		
+		if @todo_item.destroy
+			flash[:success] = "To do list item was deleted"
+		end		
 	end
 
 	private
